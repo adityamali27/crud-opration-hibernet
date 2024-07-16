@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CRUD Operations</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+    }
+
+    button[type="reset"] {
+        background-color: #dc3545;
+    }
+
+    button[type="reset"]:hover {
+        background-color: #c82333;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    a button {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>CRUD Operations on Student Details</h1>
+
+<form action="finddata">
+<table>
+<tr>
+       <td>Enter the ID</td>
+       <td><input type="number" name="id"></td>
+</tr>
+<tr>
+       <td><button type="submit">Find</button></td>
+       <td><button type="reset">Cancel</button></td>
+</tr>
+</table>
+</form>
+
+<a href="add.html">
+    <button>Add</button>
+</a>
+<a href="update.html">
+    <button>Update</button>
+</a>
+<a href="delete.html">
+    <button>Delete</button>
+</a>
+<a href="finddata.html">
+    <button>Fetch</button>
+</a>
+
+</body>
+</html>

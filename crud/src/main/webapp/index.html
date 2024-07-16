@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	color: #343a40;
+	margin-bottom: 40px;
+}
+
+a {
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	margin: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+	transform: translateY(-5px);
+}
+
+button:active {
+	background-color: #004085;
+}
+
+@
+keyframes fadeIn {from { opacity:0;
+	
+}
+
+to {
+	opacity: 1;
+}
+
+}
+button {
+	animation: fadeIn 1s ease-in;
+}
+</style>
+</head>
+<body>
+
+	<h1>CRUD Operation on Student Details</h1>
+
+	<a href="add.html">
+		<button>Add</button>
+	</a>
+	<a href="update.html">
+		<button>Update</button>
+	</a>
+	<a href="delete.html">
+		<button>Delete</button>
+	</a>
+	<a href="finddata.html">
+		<button>Fetch</button>
+	</a>
+
+</body>
+</html>
